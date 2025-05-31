@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎮 GameZone - Игровой портал</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="stars"></div>
+    
+    <header class="game-header">
+        <div class="header-content">
+            <h1 class="game-title">🎮 GameZone</h1>
+            <p class="subtitle">Добро пожаловать в мир игр!</p>
+            <div class="score-display">
+                <span>Очки: <span id="score">0</span></span>
+                <span>Уровень: <span id="level">1</span></span>
+            </div>
+        </div>
+    </header>
+
+    <nav class="game-nav">
+        <button class="nav-btn active" data-section="home">🏠 Главная</button>
+        <button class="nav-btn" data-section="games">🎯 Игры</button>
+        <button class="nav-btn" data-section="achievements">🏆 Достижения</button>
+        <button class="nav-btn" data-section="about">ℹ️ О нас</button>
+    </nav>
+
+    <main class="game-main">
+        <section id="home" class="section active">
+            <div class="welcome-card">
+                <h2>🚀 Начни свое приключение!</h2>
+                <p>Добро пожаловать в GameZone - место, где рождаются легенды!</p>
+                <button class="play-btn" id="startGame">Начать игру</button>
+            </div>
+            
+            <div class="game-area">
+                <div class="player" id="player">🦸</div>
+                <div class="collectibles"></div>
+                <div class="game-info">
+                    <p>Используй стрелки или WASD для движения</p>
+                    <p>Собирай монеты: <span id="coins">0</span> 🪙</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="games" class="section">
+            <h2>🎮 Наши игры</h2>
+            <div class="games-grid">
+                <div class="game-card" data-game="puzzle">
+                    <div class="game-icon">🧩</div>
+                    <h3>Пазлы</h3>
+                    <p>Собирай пазлы и развивай логику</p>
+                    <button class="game-btn">Играть</button>
+                </div>
+                <div class="game-card" data-game="memory">
+                    <div class="game-icon">🧠</div>
+                    <h3>Память</h3>
+                    <p>Тренируй память с карточками</p>
+                    <button class="game-btn">Играть</button>
+                </div>
+                <div class="game-card" data-game="arcade">
+                    <div class="game-icon">🕹️</div>
+                    <h3>Аркада</h3>
+                    <p>Классические аркадные игры</p>
+                    <button class="game-btn">Играть</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="section">
+            <h2>🏆 Достижения</h2>
+            <div class="achievements-list">
+                <div class="achievement locked">
+                    <span class="achievement-icon">🏅</span>
+                    <div class="achievement-info">
+                        <h3>Первые шаги</h3>
+                        <p>Собери первую монету</p>
+                    </div>
+                </div>
+                <div class="achievement locked">
+                    <span class="achievement-icon">💰</span>
+                    <div class="achievement-info">
+                        <h3>Коллекционер</h3>
+                        <p>Собери 10 монет</p>
+                    </div>
+                </div>
+                <div class="achievement locked">
+                    <span class="achievement-icon">⭐</span>
+                    <div class="achievement-info">
+                        <h3>Мастер игр</h3>
+                        <p>Достигни 100 очков</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>ℹ️ О проекте</h2>
+            <div class="about-content">
+                <p>GameZone - это интерактивный игровой портал, созданный с любовью к играм и технологиям.</p>
+                <div class="tech-stack">
+                    <h3>Технологии:</h3>
+                    <span class="tech-badge">HTML5</span>
+                    <span class="tech-badge">CSS3</span>
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">Анимации</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="game-footer">
+        <div class="footer-content">
+            <p>© 2025 GameZone. Создано с ❤️ для геймеров</p>
+            <div class="social-links">
+                <span>🎮</span>
+                <span>🕹️</span>
+                <span>🎯</span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="particles"></div>
+</body>
+</html>
